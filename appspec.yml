@@ -3,7 +3,5 @@ os: linux
 hooks:
   beforeInstall:
     - location: beforeInstall.sh
-      runas: root
   Install:
     - location: install.sh
-      runas: root
