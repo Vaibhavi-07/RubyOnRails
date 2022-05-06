@@ -1,8 +1,5 @@
 version: 0.0
 os: linux
-files:
-  - source: /
-    destination: /home/ubuntu/ruby
 hooks:
   beforeInstall:
     - location: beforeInstall.sh
@@ -10,6 +7,3 @@ hooks:
   Install:
     - location: install.sh
       runas: root
-#   ValidateService:
-#     - location: install.sh
-#        runas: root
