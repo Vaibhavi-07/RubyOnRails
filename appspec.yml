@@ -2,11 +2,11 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /ruby
+    destination: /home/ubuntu/ruby
 hooks:
   Install:
     - location: install.sh
 #       runas: root
-  ValidateService:
-    - location: install.sh
-#       runas: root
+#   ValidateService:
+#     - location: install.sh
+#        runas: root
