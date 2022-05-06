@@ -4,9 +4,12 @@ files:
   - source: /
     destination: /home/ubuntu/ruby
 hooks:
+  beforeInstall:
+    - location: beforeInstall.sh
+      runas: root
   Install:
     - location: install.sh
-#       runas: root
+      runas: root
 #   ValidateService:
 #     - location: install.sh
 #        runas: root
