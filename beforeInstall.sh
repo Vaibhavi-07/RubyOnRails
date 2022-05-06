@@ -1,4 +1,6 @@
 sudo su 
+wget https://aws-codedeploy-us-east-1.s3.us-east-1.amazonaws.com/latest/install
+sudo chmod +x ./install
 curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
 curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
 echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
